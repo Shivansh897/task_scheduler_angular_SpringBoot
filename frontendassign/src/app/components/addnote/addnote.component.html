@@ -1,0 +1,29 @@
+
+<div class="container">
+    <img class="noteimg" src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="note">
+<form  (ngSubmit)="formSubmit()" #registrationForm="ngForm">
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          <mat-form-field class="full-width">
+            <mat-label>Title</mat-label>
+            <input name="title" type="text" matInput [(ngModel)]="note.title" pattern="[a-zA-Z0-9@,;&*+-\s]*"  autofocus="true" required>
+          </mat-form-field>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          <mat-form-field class="full-width">
+            <mat-label>Content</mat-label>
+            <textarea rows="5"  name="content" type="text" matInput [(ngModel)]="note.content" pattern="[a-zA-Z0-9@,;&*+-\s]*" [maxlength]="500" required></textarea>
+          </mat-form-field>
+        </p>
+      </div>
+      </div>
+      <div class="text-center">
+    <button type="submit" class="btn btn-dark btn-lg rounded-pill" [disabled]="registrationForm.invalid">Submit</button>
+    </div>
+  </form>
+  </div>

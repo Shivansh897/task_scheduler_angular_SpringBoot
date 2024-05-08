@@ -1,0 +1,25 @@
+
+.container {
+    
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    margin-top: 40px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  button {
+    margin-bottom: 15px;
+  }
+  .noteimg{
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+  

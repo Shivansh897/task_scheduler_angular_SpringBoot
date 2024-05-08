@@ -1,0 +1,74 @@
+.navbar .links {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  .navbar .links .nav-link {
+    
+    margin-right: 30px;
+  }
+  .navbar .links .nav-link:hover {
+    text-decoration: underline;
+  }
+  .navbar .btn.btn-primary {
+    background-color: #007bff;
+  }
+  .navbar .btn.logout-btn {
+    margin-left: 10px;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+  }
+   .btn:hover{
+    transform: translateY(-3px);
+   }
+  .material-icons {
+    margin-right: 5px;
+  }
+  
+  .btn-text {
+    display: inline-block;
+  }/*# sourceMappingURL=navbar.component.css.map */
+
+
+  .notebtn{
+   margin-right: 30px;
+  }
+
+  .topIcon{
+
+    font-size: 20px;
+    margin-right:10px ;
+    color: #444;
+    cursor: pointer;
+    transition:transform 0.5s  ;
+    
+    }
+    .topIcon:hover{
+      transform: translateY(-3px);
+    }
+    .navbar{
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      font-family: 'josefin Sans', 'sans-serif';
+      z-index: 999;
+    }
+
+    .topLeft{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+
+}
+

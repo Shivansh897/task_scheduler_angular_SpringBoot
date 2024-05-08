@@ -1,0 +1,26 @@
+
+<!-- <div class="container">
+<button class="btn" routerLink="/addNote">
+    AddNote
+  </button>
+</div> -->
+
+<div class="review">
+  <div *ngFor="let note of allNotes" class="review-card  text-center">
+    <img class="notesimg" src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="notes">
+    
+   <a (click)="fullview(note.id)"> <h2 class="title">{{ note.title }}</h2></a>
+    <div class="text-container">
+    <p>{{ note.content }}</p>
+    </div>
+   
+    
+   
+  </div>
+  <div class="text-center" *ngIf="allNotes && allNotes.length === 0">
+    <h2 class="mt-4">No Reviews available now!!</h2>
+  </div>
+</div>
+
+
+

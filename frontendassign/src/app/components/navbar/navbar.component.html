@@ -1,0 +1,57 @@
+<nav class="navbar">
+    <div className='top'>
+      <div class="topLeft">
+    <i class="topIcon fa-brands fa-square-facebook" style=" color: #2b79de" ></i>
+    <i class="topIcon fa-brands fa-square-twitter" style=" color: #2b79de "></i>
+    <i class="topIcon fa-brands fa-square-pinterest" style= "color: #f11e1e "></i>
+    <i class="topIcon fa-brands fa-square-instagram" style= "color: #d62976 "></i>
+     </div>
+     </div>
+    <div class="links" *ngIf="!login.isLoggedin()"  >
+      <a class="nav-link"  *ngIf="!login.isLoggedin()" routerLink="/signup">
+        <span class="material-icons">app_registration</span>Register</a
+      >
+      <a class="nav-link" *ngIf="!login.isLoggedin()" routerLink="/login"
+        ><span class="material-icons">login</span>Login</a
+      >
+    </div>
+    <div class="notebtn">
+      <button *ngIf="login.isLoggedin()" class="btn" routerLink="/user-dashboard" >
+        Home
+      </button>
+      </div>
+      <div class="notebtn">
+        <button *ngIf="login.isLoggedin()" class="btn" routerLink="/addNote">
+              Write
+        </button>
+        </div>
+      <div class="notebtn">
+        <button *ngIf="login.isLoggedin()" class="btn">
+          About
+        </button>
+        </div>
+        <div class="notebtn">
+          <button *ngIf="login.isLoggedin()" class="btn" >
+            Contact Us
+          </button>
+          </div>
+          <div class="notebtn">
+            <button *ngIf="login.isLoggedin()" class="btn" (click)="logout()" >
+              Logout
+            </button>
+            </div>
+  
+  
+    <!-- <button
+      class="btn btn-danger btn-sm rounded-pill"
+      (click)="logout()"
+    *ngIf="login.isLoggedin()"
+      
+    >
+      <span class="material-icons" >logout</span>
+      <span class="btn-text">Logout</span>
+    </button> -->
+
+  
+  </nav>
+  

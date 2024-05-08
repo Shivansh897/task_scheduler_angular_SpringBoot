@@ -1,0 +1,45 @@
+
+<div class="bootstrap-wrapper text-center">
+    <div class="container text-center">
+      <div class="card text-center">
+        
+        <h2 class="text-center">Login Here</h2>
+       
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+          
+            <form  (ngSubmit)="formSubmit()"  >
+              <div class="row">
+                <div class="col-md-12">
+                  <p>
+                    <mat-form-field class="full-width">
+                      <mat-label>Username</mat-label>
+                     
+                      <input [(ngModel)]="loginData.username" name="username" type="email" matInput required>
+                    </mat-form-field>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p>
+                    <mat-form-field class="full-width">
+                      <mat-label>Password</mat-label>
+                     
+                      <input  [(ngModel)]="loginData.password" name="password" type="password" matInput required>
+                    </mat-form-field>
+                  </p>
+                </div>
+              </div>
+              <div class="button-container text-center">
+              <button type="submit" class="btn btn-dark btn-lg rounded-pill">Login</button>
+              
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+   

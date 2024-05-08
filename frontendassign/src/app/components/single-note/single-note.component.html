@@ -1,0 +1,29 @@
+<div class="container">
+    <img class="noteimg" src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="note">
+       <div class="title">
+
+        <h1 class="text-center">{{ notes.title }}</h1>
+       </div>
+       <div class="icons">
+        <a routerLink="/addNote"><span class="icon material-icons" style="color: teal;font-size: 30px;">add</span></a>
+
+        <a (click)="deleteNotes(notes.id)" >
+ 
+            <span class="icon material-icons" style=" cursor: pointer;color: rgb(154, 55, 55); font-size: 30px; -webkit-text-stroke-width: 0px; text-shadow: none;">delete_forever</span>
+        </a>
+       </div>
+       <div class="author">
+
+        
+
+        <h3>Author : {{ notes.user.username }}</h3>
+        <h3 class="date">Posted on {{notes.createdAt | date:'mediumDate'}}</h3>
+       </div>
+      
+       <div class="content">
+
+        <p>{{ notes.content }}</p>
+       </div>
+</div>
+
+
